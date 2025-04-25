@@ -1,0 +1,31 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<h1 class="titulo-tienda">🏋️ Tienda Deportiva PowerFit Daniel Charry</h1>
+
+<p class="descripcion-tienda">
+  Bienvenido a PowerFit, tu tienda deportiva de confianza. Encuentra los mejores productos para entrenar, competir y mantenerte en forma. ¡Activa tu fuerza con calidad y estilo! 💪
+</p>
+
+<select id="filtro-categoria" onchange="filtrarPorCategoria()">
+  <option value="todas">Todas las categorías</option>
+  <option value="balones">🏀 Balones</option>
+  <option value="fuerza">🏋️ Fuerza</option>
+  <option value="proteccion">🛡️ Protección</option>
+</select>
+
+<div id="productos"></div>
+
+<div class="carrito">
+  <h2>🛒 Carrito de Compras (<span id="cantidad">0</span> items)</h2>
+  <ul id="lista-carrito"></ul>
+  <p><strong>Total: $<span id="total">0.00</span></strong></p>
+  <button class="vaciar" onclick="vaciarCarrito()">🚫 Vaciar Carrito</button>
+  <button class="comprar" onclick="finalizarCompra()">✅ Finalizar Compra</button>
+
+  
+  <div id="paypal-button-container" style="margin-top: 20px;"></div>
+</div>
+
+
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
