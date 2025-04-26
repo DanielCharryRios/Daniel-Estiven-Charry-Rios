@@ -162,3 +162,4 @@ paypal.Buttons({
     alert("❌ Hubo un error al procesar el pago.");
   }
 }).render('#paypal-button-container');
+
